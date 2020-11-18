@@ -1,0 +1,391 @@
+CREATE TABLE IF NOT EXISTS `station` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sname` varchar(50) NOT NULL,
+  PRIMARY KEY (`sname`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+
+--
+-- Dumping data for table `station`
+--
+
+INSERT INTO `station` (`id`, `sname`) VALUES
+(1, 'Chandigarh'),
+(2, 'Delhi'),
+(3, 'Jaipur'),
+(4, 'Lucknow'),
+(5, 'Mumbai'),
+(6, 'Allahabad'),
+(7, 'Kolkata'),
+(8, 'Patna'),
+(9, 'Madras'),
+(10, 'Jammu Kashmir'),
+(11, 'Rajasthan'),
+(12, 'Madhya Pradesh');
+
+####################################################################################################
+
+
+ CREATE TABLE tbs(train_no integer(10),class varchar(10),status varchar(5),fare integer(10));
+
+
+************************************************************************************************************
+
+
+ INSERT INTO tbs values(2149,'AC1','rac'), (2149,'AC2','cnf'), (2149,'SLP','wt');
+INSERT INTO tbs values(2947,'AC1','canc',595),(2947,'AC2','canc',545),(2947,'SLP','canc',505),
+     (2727,'AC1','rac',245),(2727,'AC2','rac',215),(2727,'SLP','cnf',205),
+     (9955,'AC1','cnf',500),(9955,'AC2','cnf',485),(9955,'SLP','cnf',465),
+     (2121,'AC1','wt',400),(2121,'AC2','cnf',385),(2121,'SLP','cnf',365),
+     (3221,'AC1','canc',480),(3221,'AC2','canc',475),(3221,'SLP','canc',465),
+     (2233,'AC1','wt',390),(2233,'AC2','wt',385),(2233,'SLP','rac',375),
+     (2275,'AC1','canc',595),(2275,'AC2','canc',545),(2275,'SLP','canc',505),
+     (2301,'AC1','cnf',500),(2301,'AC2','cnf',485),(2301,'SLP','cnf',465),
+     (2435,'AC1','wt',400),(2435,'AC2','cnf',385),(2435,'SLP','cnf',365),
+     (2465,'AC1','wt',400),(2465,'AC2','wt',385),(2465,'SLP','cnf',365),
+     (12311,'AC1','canc',480),(12311,'AC2','canc',475),(12311,'SLP','canc',465),
+     (14217,'AC1','wt',390),(14217,'AC2','wt',385),(14217,'SLP','rac',375),
+     (4865,'AC1','canc',595),(4865,'AC2','canc',545),(4865,'SLP','canc',505),s
+     (12496,'AC1','wt',390),(12496,'AC2','wt',385),(12496,'SLP','rac',375),
+     (15632,'AC1','canc',480),(15632,'AC2','canc',475),(15632,'SLP','canc',465),
+     (12987,'AC1','wt',400),(12987,'AC2','wt',385),(12987,'SLP','cnf',365),
+     (12395,'AC1','wt',400),(12395,'AC2','cnf',365),(12395,'SLP','cnf',345),
+     (2683,'AC1','cnf',500),(2683,'AC2','cnf',485),(2683,'SLP','cnf',465),
+     (2539,'AC1','canc',595),(2539,'AC2','canc',545),(2539,'SLP','canc',505),
+     (2355,'AC1','wt',390),(2355,'AC2','wt',385),(2355,'SLP','rac',375),
+     (3307,'AC1','canc',480),(3307,'AC2','canc',475),(3307,'SLP','canc',465),
+     (2184,'AC1','wt',400),(2184,'AC2','wt',385),(2184,'SLP','cnf',365),
+     (5018,'AC1','wt',460),(5018,'AC2','cnf',365),(5018,'SLP','cnf',345),
+     (2294,'AC1','cnf',500),(2294,'AC2','cnf',485),(2294,'SLP','cnf',465),
+     (2166,'AC1','canc',595),(2166,'AC2','canc',545),(2166,'SLP','canc',505),
+     (2142,'AC1','wt',390),(2142,'AC2','wt',385),(2142,'SLP','rac',375),
+     (1094,'AC1','canc',480),(1094,'AC2','canc',475),(1094,'SLP','canc',465),
+     (2302,'AC1','wt',400),(2302,'AC2','wt',385),(2302,'SLP','cnf',365),
+     (3112,'AC1','rac',245),(3112,'AC2','rac',215),(3112,'SLP','cnf',205),
+     (2988,'AC1','cnf',500),(2988,'AC2','cnf',485),(2988,'SLP','cnf',465),
+     (2308,'AC1','canc',595),(2308,'AC2','canc',545),(2308,'SLP','canc',505),
+     (2310,'AC1','rac',245),(2310,'AC2','rac',215),(2310,'SLP','cnf',205),
+     (2424,'AC1','cnf',500),(2424,'AC2','cnf',485),(2424,'SLP','cnf',465),
+     (2550,'AC1','wt',400),(2550,'AC2','cnf',385),(2550,'SLP','cnf',365),
+     (84406,'AC1','canc',480),(84406,'AC2','canc',475),(84406,'SLP','canc',465),
+     (5956,'AC1','wt',390),(5956,'AC2','wt',385),(5956,'SLP','rac',375),
+     (18101,'AC1','canc',595),(18101,'AC2','canc',545),(18101,'SLP','canc',505),
+     (22431,'AC1','rac',245),(22431,'AC2','rac',215),(22431,'SLP','cnf',205),
+     (2670,'AC1','cnf',500),(2670,'AC2','cnf',485),(2670,'SLP','cnf',465),
+     (2296,'AC1','canc',595),(2296,'AC2','canc',545),(2296,'SLP','canc',505),
+     (12315,'AC1','wt',390),(12315,'AC2','wt',385),(12315,'SLP','rac',375),
+     (13423,'AC1','canc',595),(13423,'AC2','canc',545),(13423,'SLP','canc',505),
+     (18631,'AC1','rac',245),(18631,'AC2','rac',215),(18631,'SLP','cnf',205),
+     (1072,'AC1','cnf',500),(1072,'AC2','cnf',485),(1072,'SLP','cnf',465),
+     (2912,'AC1','canc',595),(2912,'AC2','canc',545),(2912,'SLP','canc',505),
+     (2058,'AC1','wt',390),(2058,'AC2','wt',385),(2058,'SLP','rac',375),
+     (12058,'AC1','canc',595),(12058,'AC2','canc',545),(12058,'SLP','canc',505),
+     (9026,'AC1','rac',245),(9026,'AC2','rac',215),(9026,'SLP','cnf',205),
+     (12006,'AC1','cnf',500),(12006,'AC2','cnf',485),(12006,'SLP','cnf',465),
+    (9718,'AC1','canc',595),(9718,'AC2','canc',545),(9718,'SLP','canc',505),
+     (2422,'AC1','canc',595),(2422,'AC2','canc',545),(2422,'SLP','canc',505),
+     (2232,'AC1','cnf',500),(2232,'AC2','cnf',485),(2232,'SLP','cnf',465),
+     (2332,'AC1','wt',400),(2332,'AC2','cnf',385),(2332,'SLP','cnf',365),
+     (2904,'AC1','canc',480),(2904,'AC2','canc',475),(2904,'SLP','canc',465),
+     (2926,'AC1','wt',390),(2926,'AC2','wt',385),(2926,'SLP','rac',375),
+     (3308,'AC1','canc',595),(3308,'AC2','canc',545),(3308,'SLP','canc',505),
+     (12312,'AC1','cnf',500),(12312,'AC2','cnf',485),(12312,'SLP','cnf',465),
+     (14218,'AC1','wt',400),(14218,'AC2','cnf',385),(14218,'SLP','cnf',365),
+     (2358,'AC1','wt',400),(2358,'AC2','wt',385),(2358,'SLP','cnf',365),
+     (22356,'AC1','canc',480),(22356,'AC2','canc',475),(22356,'SLP','canc',465),
+     (3256,'AC1','wt',390),(3256,'AC2','wt',385),(3256,'SLP','rac',375),
+     (12218,'AC1','canc',595),(12218,'AC2','canc',545),(12218,'SLP','canc',505),
+     (22688,'AC1','wt',390),(22688,'AC2','wt',385),(22688,'SLP','rac',375),
+     (21888,'AC1','canc',480),(21888,'AC2','canc',475),(21888,'SLP','canc',465),
+     (22452,'AC1','wt',400),(22452,'AC2','wt',385),(22452,'SLP','cnf',365),
+     (12984,'AC1','wt',400),(12984,'AC2','cnf',365),(12984,'SLP','cnf',345),
+     (22456,'AC1','cnf',500),(22456,'AC2','cnf',485),(22456,'SLP','cnf',465),
+     (22458,'AC1','canc',595),(22458,'AC2','canc',545),(22458,'SLP','canc',505);
+
+
+
+
+################################################################################################
+################################################################################################
+
+create table ticket_detail(
+doj varchar(20),
+train_no integer(10),
+class varchar(10),
+status varchar(5),
+pnr integer(10) primary key auto_increment);
+
+insert into ticket_detail values ('14/04/20',3221,'AC2','canc'),('27/6/20',3307,'SLP','canc'),('19/12/20',12311,'AC2','rac'),
+('24/11/20',2424,'SLP','canc')
+('14/11/20',2310,'AC1','wt'),('13/11/20',5955,'AC1','wt'),('18/11/20',2912,'AC1','canc');
+
+
+
+###############################################################################################
+###############################################################################################
+#train ddl
+
+create table train(train_no INT(10),train_name varchar(20),source_station varchar(20),destination varchar(20),scheduled_day varchar(20));
+******************************
+6.Allahabad To Delhi
+insert into train values(3221,'Purushotam Express','Allahabad','Delhi','mon,sat');
+insert into train values(2233,'GCT-ANVT','Allahabad','Delhi','mon,tue');
+insert into train values(2275,'PRYJ-NDLS','Allahabad','Delhi','mon,sat,sun,tue');
+insert into train values(2301,'HWH-NDLS SPECIAL EXP','Allahabad','Delhi','mon,sat,tue,wed,sun');
+insert into train values(2309,'RJBP-NDLS SPECIAL','Allahabad','Delhi','mon,tue,wed,thur,sat,sun');
+insert into train values(2417,'PRAYAGRAJ EXP','Allahabad','Delhi','mon,tue,wed,,thur,sat,sun');
+insert into train values(2423,'DBGR-NDLS','Allahabad','Delhi','mon,tue,wed,thur,sat,sun');
+insert into train values(2435,'VANDE BHARAT T18 SPL','Allahabad','Delhi','mon,tue,thur,sat');
+insert into train values(2465,'MDP-ANVT SUF SPL','Allahabad','Delhi','wed');
+insert into train values(2505,'NORT EAST PUJA SPL','Allahabad','Delhi','mon,tue,wed,thur,sat,sun');
+******************************
+6.Allahabad To Chandigarh
+insert into train values(12311,'HWH DLILKL MAIL','Allahabad','Chandigarh','mon,tue,wed,thur,sat,sun');
+insert into train values(14217,'UNCHAHAR EXP','Allahabad','Chandigarh','mon,tue,wed,thur,sat,sun');
+******************************
+6.Allahabad To Jaipur
+insert into train values(04865,'FESTIVAL SPL','Allahabad','Jaipur','thur');
+insert into train values(12496,'PRATAP EXP','Allahabad','Jaipur','sat');
+insert into train values(15632,'GHY BME BKN EXP','Allahabad','Jaipur','sun,fri');
+insert into train values(12987,'SDAH AJMER EXP','Allahabad','Jaipur','all days');
+insert into train values(12395,'ZIYARAT EXP','Allahabad','Jaipur','thur');
+******************************
+6.Allahabad To Lucknow
+insert into train values(2683,'YPR LKO FEST SPL','Allahabad','Lucknow','wed');
+insert into train values(2539,'YPR LKO FEST SPL','Allahabad','Lucknow','fri');
+insert into train values(2355,'PNBE JAT SPL','Allahabad','Lucknow','tue,sat');
+insert into train values(3307,'DHN FZR SPL','Allahabad','Lucknow','all days');
+insert into train values(2184,'PBH BPL SF SPL','Allahabad','Lucknow','mon,wed,sat');
+******************************
+6.Allahabad To Mumbai
+insert into train values(05018,'LTT FESTIVAL SPL','Allahabad','Mumbai','all days');
+insert into train values(02294,'LTT DURONTO SPL','Allahabad','Mumbai','tue,sun');
+insert into train values(02166,'LTT FESTIVAL SPL','Allahabad','Mumbai','tue,fri');
+insert into train values(02142,'DNR LTT SPL','Allahabad','Mumbai','all days');
+insert into train values(01094,'MAHANAGARI SPL','Allahabad','Mumbai','all days');
+******************************
+6.Allahabad To Kolkata
+insert into train values(02302,'HWH RAJ SPL','Allahabad','Kolkata','mon,tue,wed');
+insert into train values(02386,'JU HWH SF SPL','Allahabad','Kolkata','tue,wed,fri,sat');
+insert into train values(03112,'BKN HWH SPL','Allahabad','Kolkata','fri,sat,sun');
+insert into train values(02988,'SDAH FESTVL SPL','Allahabad','Kolkata','wed,thur,fri');
+insert into train values(02308,'JU HWH SF SPL','Allahabad','Kolkata','mon,sat,sun');
+******************************
+6.Allahabad To Patna
+insert into train values(02310,'NDLS RJPB SPL','Allahabad','Patna','monsun');
+insert into train values(02424,'NDLS DBRG SPL','Allahabad','Patna','mon,tue,sat,sun');
+insert into train values(02550,'KYQ FESTIVAL SPL','Allahabad','Patna','fri,sat,sun');
+insert into train values(84406,'BGP SUVIDHA SPL','Allahabad','Patna','tue,sat');
+insert into train values(05956,'BRAHMPUTRA SPL','Allahabad','Patna','all days');
+******************************
+6.Allahabad To Madras
+insert into train values(02670,'GANGAKAVERI SPL','Allahabad','Madras','tue,thur');
+insert into train values(02296,'DNR SBC SPL','Allahabad','Madras','all days');
+******************************
+6.Allahabad To Jammu Kashmir 
+insert into train values(18101,'TATA JAT EXP','Allahabad','Jammu Kashmir','mon,tue,sat,sun');
+insert into train values(22431,'LAD UHP EXP','Allahabad','Jammu Kashmir','tue,sat');
+******************************
+6.Allahabad To Rajasthan
+insert into train values(12315,'ANNANYA EXPRES','Allahabad','Rajasthan','fri');
+insert into train values(04865,'FESTIVAL SPL','Allahabad','Rajasthan','thur');
+insert into train values(13423,'BGP AII EXPRESS','Allahabad','Rajasthan','fri');
+insert into train values(18631,'RNC GARIBNWAZ EX','Allahabad','Rajasthan','thur');
+******************************
+6.Allahabad To Madhya Pradesh
+insert into train values(01072,'KAMAYANI EXP SPL','Allahabad','Madhya Pradesh','mon,wed,fri,sun');
+insert into train values(02912,'HWH INDB SPL','Allahabad','Madhya Pradesh','tue,fri,sun');
+insert into train values(02184,'PBH BPL SF SPL','Allahabad','Madhya Pradesh','mon,wed,sat');
+****************************************************************************************************************
+1.Chandigarh To Delhi
+insert into train values(02058,'NDLS JANSHTB EXPRESS','Chandigarh','Delhi','mon,tue,sat,sun');
+insert into train values(02926,'PASCHIM EXPRESS','Chandigarh','Delhi','mon,tue,wed,thur,sat,sun');
+insert into train values(09026,'ASR-BDTS SPL TRAIN','Chandigarh','Delhi','tue');
+insert into train values(12006,'ASR-BDTS SPL TRAIN','Chandigarh','Delhi','tue');
+insert into train values(12012,'KLK-NDLS SHATABDI EXP','Chandigarh','Delhi','all days');
+insert into train values(12046,'CDG-NDLS SHATABDI EXPRESS','Chandigarh','Delhi','mon,wed,sat,sun');
+insert into train values(12058,'NDLS JANSHTB EXPRESS','Chandigarh','Delhi','mon,wed,thur,sat,sun');
+*******************************
+1.Chandigarh To Jaipur
+insert into train values(09718,'DLPC JP FEST SP','Chandigarh','Delhi','mon,wed,sat');
+insert into train values(02422,'AII FESTIVL SPL','Chandigarh','Delhi','mon,wed,sat');
+*******************************
+1.Chandigarh To Lucknow
+insert into train values(02232,'LKO FESTIVL SPL','Chandigarh','Lucknow','mon,wed,thur,sat,sun');
+insert into train values(02332,'HWH FESTIVAL SPL','Chandigarh','Lucknow','mon,wed,thur,sat');
+*******************************
+1.Chandigarh To Mumbai
+insert into train values(02904,'GOLDEN TEMPLE SPL','Chandigarh','Mumbai','mon,wed,thur,sat,sun');
+insert into train values(02926,'PASCHIM EXP SPL','Chandigarh','Mumbai','mon,wed,thur,sat,sun');
+insert into train values(09026,'ASR BDTS HUMSAFAR','Chandigarh','Mumbai','wed');
+*******************************
+1.Chandigarh To Allahabad
+insert into train values(03308,'G SATLUJ EXP SPL','Chandigarh','Allahabad','mon,wed,thur,sat,sun');
+insert into train values(12312,'KALIKA MAIL','Chandigarh','Allahabad','mon,wed,thur,sat,sun');
+insert into train values(14218,'UNCHAHAR EXP','Chandigarh','Allahabad','mon,wed,thur,sat,sun');
+*******************************
+1.Chandigarh To Kolkata
+insert into train values(02332,'HWH FESTIWAL SPL','Chandigarh','Kolkata','mon,tue,fri');
+insert into train values(02358,'ASR KOAA SUP SPL','Chandigarh','Kolkata','mon,tue');
+*******************************
+1.Chandigarh To Patna
+insert into train values(22356,'CDG - PPTA SUPER FAST EXP','Chandigarh','Patna','wed,sat');
+insert into train values(03256,'Chandi-Patli SF Special','Chandigarh','Patna','mon,tue');
+*******************************
+1.Chandigarh To Madras
+insert into train values(22688,'CDG MDU Superfast Express','Chandigarh','Madras','mon,wed,thur,sat,sun');
+insert into train values(12218,'KERLA S KRANTI','Chandigarh','Madras','mon,wed,sun');
+*******************************
+1.Chandigarh To Jammu Kashmir
+insert into train values(21888,'jk Express','Chandigarh','Jammu Kashmir','mon,wed,sat,sun');
+*******************************
+1.Chandigarh To Rajasthan
+insert into train values(02422,'ALL FESTIVL SPL','Chandigarh','Rajasthan','mon,wed,thur,sat,sun');
+insert into train values(22452,'CDG BDTS SF EXP','Chandigarh','Rajasthan','wed,sat');
+insert into train values(12984,'CDG ALL G RATH','Chandigarh','Rajasthan','mon,wed,thur,sat,sun');
+*******************************
+1.Chandigarh To Madhya Pradesh
+insert into train values(22456,'KLK-SNSI SUPERFAST TRAIN','Chandigarh','Madhya Pradesh','wed,sat');
+insert into train values(22458,'AADR-NED SUPERFAST EXPRES','Chandigarh','Madhya Pradesh','wed');
+insert into train values(22686,'CDG-YPR BI WEEKLY EXPRESS','Chandigarh','Madhya Pradesh','wed');
+***********************************************************************************************
+***********************************************************************************************
+***********************************************************************************************
+***********************************************************************************************
+***********************************************************************************************
+***********************************************************************************************
+2.Delhi To Chandigarh
+insert into train values(02057,'CNDLS-NLDM-JANSHATABDI','Delhi','Chandigarh','mon,wed,thur,sat,sun');
+insert into train values(02925,'BDTS-ASR SPECIAL','Delhi','Chandigarh','mon,wed,thur,sat,sun');
+insert into train values(09025,'BDTS-ASR SPL CLONE TRAIN','Delhi','Chandigarh','mon');
+********************************
+2.Delhi To Jaipur
+insert into train values(02916,'ASHRAM EXPRESS','Delhi','Jaipur','mon,wed,thur,sat,sun');
+insert into train values(02463,'RAJSTHN S KRANTI','Delhi','Jaipur','tue,thur,sat');
+insert into train values(02958,'RAJDHANI','Delhi','Jaipur','mon,wed,thur,sat,sun');
+insert into train values(02986,'DEC-DOUBLE DCKER','Delhi','Jaipur','mon,wed,thur,sat,sun');
+********************************
+2.Delhi To Lucknow
+insert into train values(02025,'Nagpur Amritsar COVID 19 AC Special','Delhi','Lucknow','mon');
+insert into train values(02057,'NDLS-NL JANSHATABDI','Delhi','Lucknow','mon,wed,thur,sat,sun');
+insert into train values(02218,'MAHAMANA EXPRESS','Delhi','Lucknow','tue,thur,sat');
+********************************
+2.Delhi To Mumbai
+insert into train values(02284,'NZM DURONTO EXPRESS','Delhi','Mumbai','thur');
+insert into train values(02414,'NZM RAJDHANI EXPRESS','Delhi','Mumbai','thur');
+insert into train values(02432,'NDLS RAJ SPL','Delhi','Mumbai','mon,wed,sat,sun');
+insert into train values(02494,'Darshan COVID 19SF','Delhi','Mumbai','thur');
+********************************
+2.Delhi To Allahabad
+insert into train values(02276,'NDLS-HUMSAFAR SPL','Delhi','Allahabad','mon,wed,thur,sat,sun');
+insert into train values(02304,'NDLS-HWH EXP','Delhi','Allahabad','mon,wed,thur,sat,sun');
+insert into train values(02302,'NDLS HWH SPECIAL EXP','Delhi','Allahabad','mon,wed,thur,sat,sun');
+********************************
+2.Delhi To Kolkata
+insert into train values(02304,'NDLS-HWH EXP','Delhi','Kolkata','tue,wed,thur,sat');
+insert into train values(02260,'New Delhi Sealdah SF','Delhi','Kolkata','mon');
+insert into train values(12306,'KOLKATA RAJDHANI EXPRESS','Delhi','Kolkata','thur');
+insert into train values(12314,'SDAH RAJDHANI EXPRESS','Delhi','Kolkata','mon,wed,thur,sat,sun');
+********************************
+2.Delhi To Patna
+insert into train values(02310,'NDLS-RJPB SPECIAL','Delhi','Patna','mon,wed,thur,sat,sun');
+insert into train values(02368,'ANVT BGP SPL','Delhi','Patna','mon,wed,thur,sat,sun');
+insert into train values(02392,'SHRAMJEEVI EXP SPECIA','Delhi','Patna','mon,wed,thur,sat,sun');
+********************************
+2.Delhi To Madras
+insert into train values(02616,'NDLS-MAS SF SPL','Delhi','Madras','wed,sat');
+insert into train values(12434,'NZM-MAS RAJDHANI EXP','Delhi','Madras','mon,wed,thur,sat,sun');
+insert into train values(12270,'NZM-MAS DURANTO EXP','Delhi','Madras','mon,thur');
+********************************
+2.Delhi To Jammu Kashmir
+insert into train values(15558,'JK RAJDHANI EXP','Delhi','Madras','thur,sun');
+********************************
+2.Delhi To Rajasthan
+insert into train values(02916,'ASHRAM EXPRESS','Delhi','Rajasthan','mon,wed,thur,sat,sun');
+insert into train values(09416,'DLI-ADI CLONE SPECIAL','Delhi','Rajasthan','wed,sat');
+insert into train values(09610,'HW-UDZ MEX SPL','Delhi','Rajasthan','tue,thur,sat');
+********************************
+2.Delhi To Madhya Pradesh
+insert into train values(02156,'NZM-HBJ SPL SF BHOPAL EXP','Delhi','Madhya Pradesh','mon,wed,thur,sat,sun');
+insert into train values(02286,'NZM-SC DURONTO EXP','Delhi','Madhya Pradesh','thur,sat');
+insert into train values(02434,'NDLS-MAS RAJ SPL','Delhi','Madhya Pradesh','wed,sat');
+***********************************************************************************
+3.Jaipur To Chandigarh
+insert into train values(12983,'ALL CDG G RATH','Jaipur','Chandigarh','mon,thur,sat');
+insert into train values(19717,'Jaipur Daulatpur Chowk Intercity','Jaipur','Chandigarh','mon,wed,thur,sat,sun');
+****************************
+3.Jaipur To Delhi
+insert into train values(02915,'ADI - DLI SPECIAL','Jaipur','Delhi','mon,wed,thur,sat,sun');
+insert into train values(02957,'RAJDHANI','Jaipur','Delhi','mon,wed,thur,sat,sun');
+insert into train values(02985,'Jaipur Delhi AC Double Decker','Jaipur','Delhi','mon,wed,thur,sat,sun');
+****************************
+3.Jaipur To Lucknow
+insert into train values(12413,'AII-JAT POOJA EXP','Jaipur','Lucknow','mon,wed,thur,sat,sun');
+insert into train values(14854,'MARUDHAR EXPRES','Jaipur','Lucknow','wed,thur,sat');
+insert into train values(14864,'MARUDHAR EXPRES','Jaipur','Lucknow','wed,thur,sat');
+****************************
+3.Jaipur To Mumbai
+insert into train values(12240,'JP BCT DURONTO','Jaipur','Mumbai','mon,wed,');
+insert into train values(12215,'DEE BDTS GARIBRATH','Jaipur','Mumbai','mon,wed,thur,sat');
+insert into train values(02696 ,'Jaipur Bandra T Premium Special 0','Jaipur','Mumbai','mon');
+****************************
+3.Jaipur To Allahabad
+insert into train values(02386,'JU HWH SPL','Jaipur','Allahabad','mon,tue,thur');
+insert into train values(02388,'BKN HWH SPL','Jaipur','Allahabad','wed,sat,sun');
+insert into train values(02404,'Bikaner Howrah Link','Jaipur','Allahabad','mon,,tue,wed,thur,fri');
+****************************
+3.Jaipur To Kolkata
+insert into train values(02308,'Jodhpur Howrah C19Spl','Jaipur','Kolkata','mon,wed,thur,sat,sun');
+insert into train values(02386,'JU HWH SPL','Jaipur','Kolkata','mon,tue,thur');
+insert into train values(02388,'BKN HWH SPL','Jaipur','Kolkata','wed,thur,sat,sun');
+****************************
+3.Jaipur To Patna
+insert into train values(12316,'ANANYA EXP','Jaipur','Patna','sun');
+insert into train values(12396,'ZIYARAT EXPRESS','Jaipur','Patna','thur');
+insert into train values(15631 ,'BME-BKN GHY EXP','Jaipur','Patna','tue,sat');
+****************************
+3.Jaipur To Madras
+insert into train values(12968,'JP CHENNAI EXP','Jaipur','Madras','thur,sat');
+insert into train values(12970,'JP CBE SF EXP','Jaipur','Madras','mon');
+insert into train values(16863,'BGKT-MQ WKLY EXP','Jaipur','Madras','wed');
+****************************
+3.Jaipur To Jammu Kashmir
+insert into train values(02100,'RAJ-JK EXP','Jaipur','Jammu Kashmir','mon,sat');
+
+****************************
+3.Jaipur To Rajasthan
+insert into train values(02281,'JBP-AII DAYODAI SF SPL','Jaipur','Rajasthan','mon,wed,thur,sat,sun');
+insert into train values(02547,'AGC-ADI SUPERFAST','Jaipur','Rajasthan','mon,tue,thur');
+insert into train values(02916,' ASHRAM EXPRESS','Jaipur','Rajasthan','mon,wed,thur,sat,sun');
+****************************
+3.Jaipur To Madhya Pradesh
+insert into train values(02976,'JP MYS SF EXP','Jaipur','Madhya Pradesh','tue,sat');
+**********************************************************************
+
+#########################################################################################
+********************************************************************************************************************************
+
+create table username(username varchar(10),password varchar(10),email varchar(40) primary key);
+
+insert into username('root',11111,'beerus.god04@gmail.com');
+
+##########################################################################################
+**********************************************************************************************************************************
+
+create table users(fname varchar(30),last varchar(30),email varchar(40) primary key,city varchar(20),city varchar(20),pincode varchar(20),dob varchar(20),gender varchar(5),address varchar(40));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
